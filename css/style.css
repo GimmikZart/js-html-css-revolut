@@ -57,7 +57,7 @@ section > ul {
 }
 
 .drop {
-  /* display: none; */
+  display: none;
   background-color: green;
   position: absolute;
   top: 30px;
