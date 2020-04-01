@@ -6,15 +6,17 @@
 // $(".nav-item").siblings().toggle();
 
 
-
 $(document).ready(function() {
-
-  alert($(".drop").siblings().length);
 
   $(".nav-item").mouseenter(
     function(){
-      $(".drop").siblings().toggle();
+      $(this).children(".drop").toggle();
     }
   )
-    
+  $(".nav-item").mouseleave(
+    function(){
+      $(this).children(".drop").toggle();
+    }
+  )
+
 });

@@ -17,6 +17,7 @@ header {
   margin: 0 auto;
   margin-top: 50px;
   width: 50%;
+  min-width: 1000px;
   background-color: grey;
   display: flex;
   justify-content: space-between;
@@ -33,7 +34,12 @@ section > ul {
 /* parte sinistra -----------*/
 #header-left {
   width: 30%;
-  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-left > ul > li , h5 {
+  padding: 10px;
 }
 
 #logo {
@@ -43,9 +49,20 @@ section > ul {
 
 
 /* parte destra------------- */
+
+#hamburger-menu{
+  display: none;
+  font-size: 50px;
+}
+
 #header-right {
   width: 47%;
-  background-color: red;
+}
+
+#header-right > ul > li {
+  width: 16.66%;
+  text-align: center;
+  padding: 10px;
 }
 
 
@@ -57,9 +74,50 @@ section > ul {
 }
 
 .drop {
+  padding: 10px;
   display: none;
   background-color: green;
   position: absolute;
-  top: 30px;
+}
+
+.drop li {
+  margin: 30px;
+  text-align: left;
+}
+
+#conti .drop {
+  width: 135px;
+  top: 60px;
+  left: -25%;
+}
+#prodotti .drop  {
+  width: 300px;
+  top: 60px;
+  left: -60%;
+}
+#azienda .drop  {
+  width: 200px;
+  top: 60px;
   left: -50%;
+}
+#aiuto .drop  {
+  width: 200px;
+  top: 60px;
+  left: -50%;
+}
+
+@media screen and (max-width: 1080px) {
+
+  #header-left {
+    width: 100%;
+  }
+  #header-right {
+    display: none;
+  }
+
+
+  #hamburger-menu {
+    display: block;
+    margin-right: 50px;
+  }
 }
