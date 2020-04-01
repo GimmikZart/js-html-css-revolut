@@ -19,4 +19,15 @@ $(document).ready(function() {
     }
   )
 
+  $("#hamburger-icon").click(
+    function(){
+      $("#box").show();
+    }
+  )
+
+  $(".fa-times").click(
+    function(){
+      $("#box").hide();
+    }
+  )
 });
