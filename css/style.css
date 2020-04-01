@@ -1,0 +1,65 @@
+/* FOGLIO DI STILE */
+
+/* REGOLE GENERALI --------------------- */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER ------------------------------- */
+header {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 50%;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/* parte sinistra -----------*/
+#header-left {
+  width: 30%;
+  background-color: red;
+}
+
+#logo {
+  height: 25px;
+  width: auto;
+}
+
+
+/* parte destra------------- */
+#header-right {
+  width: 47%;
+  background-color: red;
+}
+
+
+#conti,
+#prodotti,
+#azienda,
+#aiuto {
+  position: relative;
+}
+
+.drop {
+  /* display: none; */
+  background-color: green;
+  position: absolute;
+  top: 30px;
+  left: -50%;
+}
